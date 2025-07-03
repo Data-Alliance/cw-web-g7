@@ -1,0 +1,275 @@
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/BMJUA/BMJUA.css");
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/BMHANNAAir/BMHANNAAir.css");
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+  font-family: "BMHANNAAir";
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  touch-action: manipulation;
+  overscroll-behavior-y: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  background-color: rgb(243, 242, 242);
+  padding: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.service {
+  border: 1px solid #ddd;
+  margin: 10px 20px 10px 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 4px #aaaaaa;
+}
+
+.service-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.service-image {
+  flex: 2;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.service-text {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 4px;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  letter-spacing: normal;
+}
+
+.divider-image {
+  display: block;
+  margin: 0 auto 4px auto;
+  width: 80%;
+  max-width: 100%;
+}
+
+.service-text p {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.service-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0px 0px 0px;
+  width: 100%;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background-image: url("../resource/button-background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-link:hover {
+  text-decoration: none;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #fff;
+  margin-top: 60px;
+  margin: 20px;
+}
+
+.contact-title {
+  background-image: url("../resource/title-background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.contact-box p {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #119ec9;
+  font-family: "BM JUA";
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+.map img {
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 250px;
+  max-width: 100%;
+  display: block;
+}
+
+.video-thumbnail {
+  cursor: pointer;
+  width: 100%;
+}
+
+.footer-message {
+  background-color: grey;
+  font-size: 18px;
+  height: 150px;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Styles */
+.popup-container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: auto; /* Auto margin for centering */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px; /* Max width for larger screens */
+  position: relative; /* For positioning the close button */
+  text-align: center; /* Center image inside */
+}
+
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center image */
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
